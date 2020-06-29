@@ -1,0 +1,48 @@
+.title {
+    color: red;
+    text-align: center;
+}
+@media (min-width: 1200px) {
+    .calendarWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 640px);
+    }
+    .monthName {
+        text-align: center;
+        color: red;
+    }
+    .month {
+        border: 4px solid gray;
+        border-radius: 25px;
+        padding: 20px;
+        min-height: 600px;
+        width: 560px;
+        margin: 40px;
+        li {
+            font-size: 1.2vw;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .calendarWrapper {
+        width: 100vw;
+    }
+    .month {
+        width: 90vw;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        min-height: 500px;
+        border: 4px solid gray;
+        border-radius: 25px;
+        padding: 20px;
+        li {
+            text-align: left;
+            max-width: 80vw;
+        }
+    }
+    .monthName {
+        text-align: center;
+        color: red;
+    }
+}
