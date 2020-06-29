@@ -19,7 +19,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Verdana`,
+            family: `Lato`,
             variants: [`600`, `700`]
           },
         ],
