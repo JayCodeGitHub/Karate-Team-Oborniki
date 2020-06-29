@@ -26,8 +26,8 @@ const Div = styled.div`
 const Contakt = () => (
     <>
     <Div>
-    <P>tel.telefon z cms</P>
-    <P>Email:<span className="blue">email z cms</span></P>
+    <P>888 585 785</P>
+    <P>Email:<span className="blue">wbi@poczta.fm</span></P>
     </Div>
     </>
 )
