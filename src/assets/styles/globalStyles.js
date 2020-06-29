@@ -11,12 +11,14 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: 'Verdana';
+    font-weight: 700;
   }
   button {
     padding: 0;
     cursor: pointer;
-    font-family: 'Montserrat';
+    font-family: 'Verdana';
+    font-weight: 700;
   }
   p {
     font-size: 16px;
