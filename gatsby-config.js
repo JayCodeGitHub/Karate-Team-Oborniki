@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: process.env.API_DATO_CMS,
+       apiToken: `ec826cec2f984fe3bf402aa1375ef9`,
       },
     },
     `gatsby-plugin-sass`,
