@@ -6,6 +6,9 @@ import styles from '../layouts/clubFrends.module.scss'
 const Title = styled.h1`
   color: red;
   text-align: center;
+  @media (max-width: 1199px) {
+    font-size: 6vw;
+  }
 `
 const Content = styled.h2`
   text-align: center;
@@ -17,6 +20,7 @@ const Content = styled.h2`
   @media (max-width: 1199px) {
     width: 100vw;
     margin-bottom: 10vw;
+    font-size: 5vw;
   }
 `
 
