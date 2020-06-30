@@ -39,7 +39,7 @@ const Navigation = () => (
                 className={styles.navigationItem}
                 activeClassName={styles.active}>
                     <li>
-                        <h3>Kalędarz</h3>
+                        <h3>Kalendarz</h3>
                     </li>
             </Link>
             <Link 
