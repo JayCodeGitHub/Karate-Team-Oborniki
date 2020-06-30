@@ -102,7 +102,7 @@ const IndexPage = ({ data }) => {
       )
     })}
     <div>
-      <News>Galeria Zdięć</News>
+      <News>Galeria Zdjęć</News>
     </div>
     {galeria.map(({node} , i) => {
       return (
