@@ -56,9 +56,11 @@ const Author = styled.div`
 const Fotter = () => (
     <>
     <FooterWrapper>
-        <ContaktData>dane Kontaktowe</ContaktData>
+        <ContaktData>
+        </ContaktData>
         <Author><h1>Strona Autorstwa <span className="red">JayCode</span></h1></Author>
-        <ContaktDataRight>dane Kontaktowe</ContaktDataRight>
+        <ContaktDataRight>
+        </ContaktDataRight>
     </FooterWrapper>
     </>
 )
