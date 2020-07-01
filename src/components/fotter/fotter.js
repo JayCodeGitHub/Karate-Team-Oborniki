@@ -58,7 +58,7 @@ const Fotter = () => (
     <FooterWrapper>
         <ContaktData>
         </ContaktData>
-        <Author><h1>Strona Autorstwa <span className="red">JayCode</span></h1></Author>
+        <Author><h1>Strona Autorstwa <span className="red">Jakuba Gryzińskiego</span></h1></Author>
         <ContaktDataRight>
         </ContaktDataRight>
     </FooterWrapper>
