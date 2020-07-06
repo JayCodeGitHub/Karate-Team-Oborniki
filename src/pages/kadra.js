@@ -31,7 +31,8 @@ const Photo = styled.div`
   @media (min-width: 1200px) {
   grid-column-start: ${({order}) => order % 2 === 0 ? '2' : '1'};
   grid-row: 1 / span 1;
-  width: 50vw;
+  max-width: 50vw;
+  
   }
 `
 const Context = styled.div`
