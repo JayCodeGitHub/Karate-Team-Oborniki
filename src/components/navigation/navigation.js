@@ -15,7 +15,7 @@ const Navigation = () => (
                 className={styles.navigationItem}
                 activeClassName={styles.active}>
                     <li>
-                        <h3>Kadra</h3>
+                        <h3>O Nas</h3>
                     </li>
             </Link>
             <Link 
