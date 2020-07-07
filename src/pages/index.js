@@ -87,6 +87,7 @@ const IndexPage = ({ data }) => {
     })}
     <div>
       <News>Nowości</News>
+      <News>Aby być na bieżąco odwiedż nas również na facebooku</News>
     </div>
     {nowosci.map(({node} , i) => {
       return (
@@ -118,6 +119,7 @@ const IndexPage = ({ data }) => {
         </Post>
       )
     })}
+    <News>Po więcej zdięć odwiedż nas również na facebooku</News>
     </div>
   )
 }
