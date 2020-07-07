@@ -64,6 +64,16 @@ const News = styled.h1`
     font-size: 7vw;
   }
 `
+const NewsBottom = styled.h1`
+  color: red;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  text-align: center;
+  font-size: 3vw;
+  @media (max-width: 1199px) {
+    font-size: 5vw;
+  }
+`
 
 
 const IndexPage = ({ data }) => {
@@ -87,7 +97,7 @@ const IndexPage = ({ data }) => {
     })}
     <div>
       <News>Nowości</News>
-      <News>Aby być na bieżąco odwiedż nas również na facebooku</News>
+      <NewsBottom>Aby być na bieżąco odwiedż nas również na facebooku</NewsBottom>
     </div>
     {nowosci.map(({node} , i) => {
       return (
@@ -119,7 +129,7 @@ const IndexPage = ({ data }) => {
         </Post>
       )
     })}
-    <News>Po więcej zdięć odwiedż nas również na facebooku</News>
+    <NewsBottom>Po więcej zdięć odwiedż nas również na facebooku</NewsBottom>
     </div>
   )
 }
