@@ -90,7 +90,10 @@ const IndexPage = ({ data }) => {
             <Paragraph>{node.paragraph}</Paragraph>
           </Context>
           <Photo order={i}>
-                  <Img src={node.photolink} alt={node.title}/> 
+                  {node.photolink ?  
+                  <Img src={node.photolink} alt={node.title}/>  : 
+                  <Img src={node.photo.url} alt={node.title}/> 
+                }
           </Photo>
         </Post>
       )
@@ -107,7 +110,10 @@ const IndexPage = ({ data }) => {
             <Paragraph>{node.pa}</Paragraph>
           </Context>
           <Photo order={i}>
-                  <Img src={node.photolink} alt={node.title}/> 
+          {node.photolink ?  
+                  <Img src={node.photolink} alt={node.title}/>  : 
+                  <Img src={node.photo.url} alt={node.title}/> 
+                }
           </Photo>
         </Post>
       )
@@ -119,12 +125,24 @@ const IndexPage = ({ data }) => {
       return (
         <Post>
           <Photo order={i}>
-                  <Img src={node.photolink} alt={node.title}/>
-                  <Img src={node.photolinkthree} alt={node.title}/>
+          {node.photolink ?  
+                  <Img src={node.photolink} alt={node.title}/>  : 
+                  <Img src={node.photo.url} alt={node.title}/> 
+                } 
+          {node.photolinkthree ?  
+                  <Img src={node.photolinkthree} alt={node.title}/>  : 
+                  <Img src={node.photothree.url} alt={node.title}/> 
+                } 
           </Photo>
           <Context order={i}>
-            <Img src={node.photolinktwo} alt={node.title}/>
-            <Img src={node.photolinkfour} alt={node.title}/> 
+          {node.photolinktwo ?  
+                  <Img src={node.photolinktwo} alt={node.title}/>  : 
+                  <Img src={node.phototwo.url} alt={node.title}/> 
+                } 
+          {node.photolinkfour ?  
+                  <Img src={node.photolinkfour} alt={node.title}/>  : 
+                  <Img src={node.photofour.url} alt={node.title}/> 
+                } 
           </Context>
         </Post>
       )
@@ -144,6 +162,9 @@ export const query = graphql`
           title
           photolink
           paragraph
+          photo {
+            url
+          }
         }
       }
     }
@@ -151,8 +172,11 @@ export const query = graphql`
       edges {
         node {
           title
-          photolink
           pa
+          photolink
+          photo {
+            url
+          }
         }
       }
     }
@@ -163,6 +187,18 @@ export const query = graphql`
           photolinktwo
           photolinkthree
           photolinkfour
+          photo {
+            url
+          }
+          phototwo {
+            url
+          }
+          photothree {
+            url
+          }
+          photofour {
+            url
+          }
         }
       }
     }

@@ -69,7 +69,10 @@ const KadraPage = ({ data }) => {
             <Paragraph>{node.paragraph}</Paragraph>
           </Context>
           <Photo order={i}>
-                  <Img src={node.photolink} alt={node.title}/> 
+          {node.photolink ?  
+                  <Img src={node.photolink} alt={node.title}/>  : 
+                  <Img src={node.photo.url} alt={node.title}/> 
+                } 
           </Photo>
         </Post>
       )
