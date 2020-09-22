@@ -147,10 +147,10 @@ const IndexPage = ({ data }) => {
         </Post>
       )
     })}
-    <NewsBottom>Po więcej zdięć odwiedż nas również na facebooku</NewsBottom>
+    <NewsBottom>Po więcej zdjęć odwiedź nas również na facebooku</NewsBottom>
     </div>
   )
-}
+} 
 
 
 
