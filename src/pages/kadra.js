@@ -81,7 +81,7 @@ const KadraPage = ({ data }) => {
   )
 }
   
-
+/* pobieranie danych z dato cms*/
 export const query = graphql`
   query {
     allDatoCmsKadra {
