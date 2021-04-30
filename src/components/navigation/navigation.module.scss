@@ -1,4 +1,7 @@
 @media (min-width: 1050px) {
+    div {
+        overflow: hidden;
+    }
     .navigationItem{
         height: 5vw;
         text-align: center;

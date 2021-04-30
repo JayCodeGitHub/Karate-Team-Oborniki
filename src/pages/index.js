@@ -3,20 +3,34 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 const Title = styled.h1`
-  color: red;
-  text-align: center;
+    color: red;
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
   @media (max-width: 1199px) {
     font-size: 6vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
   }
 `
 const Paragraph = styled.h2`
   text-align: center;
   @media (max-width: 1199px) {
-  font-size: 5vw;
-  width: 100vw;
+    font-size: 4.5vw;
+    width: 100vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: left;
   }
   @media (min-width: 1200px) {
     font-size: 1.5vw;
+    text-align: left;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 `
 const Post = styled.div`

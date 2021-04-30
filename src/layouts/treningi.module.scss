@@ -1,7 +1,7 @@
 @media (min-width: 1200px) {
     .trainingsWrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 640px);
+        grid-template-columns: repeat(3, 1fr);
     }
     .title {
         text-align: center;
@@ -12,7 +12,7 @@
         border-radius: 25px;
         padding: 20px;
         min-height: 600px;
-        width: 560px;
+        width: 28vw;
         margin: 40px;
         li {
             font-size: 1.2vw;
